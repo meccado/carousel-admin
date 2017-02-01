@@ -10,7 +10,7 @@ Install
 Via Composer
 
 ``` bash
-$ composer require meccado/carousel-admin
+$ composer require "meccado/carousel-admin:>=1.0.4"
 ```
 To register the Service Provider edit **config/app.php** file and add to providers array:
 
@@ -24,17 +24,33 @@ To register the Service Provider edit **config/app.php** file and add to provide
 Publish files with:
 
 ```bash
-
 $ php artisan vendor:publish  --force
 ```
 
 Migrate & Seed database files with:
 
 ```bash
-
 $ composer dump-autoload
 
 $ php artisan migrate --seed
+```
+
+##### Admin Login Page & Credentials
+
+```php
+Admin Login: http://localhost:8000/admin
+
+Super Admin
+User: super@domain.com
+Password: password
+
+Admin
+User: admin@domain.com
+Password: password
+
+General User
+User: user@gmail.com
+Password: password
 ```
 
 ## Usage

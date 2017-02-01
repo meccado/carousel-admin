@@ -23,7 +23,7 @@
                         {{$carousel->images != null ? $carousel->images()->count() : 0}} image(s) loaded
                     </span>
                 </td>
-                <td>{{$carousel->published === 1  ? 'True' : 'False'}}</td>
+                <td>{{$carousel->published === true  ? 'True' : 'False'}}</td>
                 <td>{{$carousel->description}}</td>
                 <td>
                     <div class="row">
