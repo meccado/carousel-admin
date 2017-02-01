@@ -43,7 +43,7 @@ class CarouselAdminServiceProvider extends ServiceProvider
       //Publish migrations
       $this->publishes([
         __DIR__ . '/database/migrations' => database_path('migrations'),
-        //__DIR__ . '/database/seeds' => database_path('seeds'),
+        __DIR__ . '/database/seeds' => database_path('seeds'),
       ], 'migrations');
 
       $this->publishes([
