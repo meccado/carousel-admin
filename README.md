@@ -10,7 +10,7 @@ Install
 Via Composer
 
 ``` bash
-$ composer require "meccado/carousel-admin:>=1.0.4"
+$ composer require "meccado/carousel-admin:~1.0.0"
 ```
 To register the Service Provider edit **config/app.php** file and add to providers array:
 
@@ -24,6 +24,9 @@ To register the Service Provider edit **config/app.php** file and add to provide
 Publish files with:
 
 ```bash
+#In Laravel =>5.3.x or =>5.4.x or hiegher first run:
+$ php artisan make:auth
+#then
 $ php artisan vendor:publish  --force
 ```
 
